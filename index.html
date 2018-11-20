@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 让适口宽度为设备的宽度,不允许用户缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- 不自动识别电话号码-->
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <title>运营商</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <section id="sectionFirst">
+            <div class="first_top">
+                <p>
+                    <label>运营商</label>
+                    <span class="QCellCore"></span>
+                </p>
+                <p>
+                    <label>手机号码</label>
+                    <span class="mobile"></span>
+                </p>
+                <p class="paddword_p">
+                    <label>服务密码</label>
+                    <span class="nonePassword"></span>
+                    <input type="password" placeholder="请输入服务密码">
+                </p>
+            </div>
+            <div class="first_footer">
+                <p>提交</p>
+            </div>
+        </section>
+        <section id="sectionSeond">
+            <div class="section_top">
+                <label>
+                    <input type="text" placeholder="短信验证码" class="input_text">
+                </label>
+                <span class="close"></span>
+                <!-- <span class="code">获取验证码</span> -->
+                <!-- <span style="display: none;" class="waitCode">120秒</span> -->
+                <span class="waitCode">120秒</span>
+                <span style="display: none;" class="resetCode">重新获取</span>
+            </div>
+            <div class="section_footer">
+                <p>提交</p>
+            </div>
+        </section>
+        <section id="sectionThree">
+            <div class="three_top">
+                <img src="./images/signSuccess@2x.png">
+                <p>恭喜您，授权成功！</p>
+            </div>
+            <div class="section_footer">
+                <p class="goBack">返回首页</p>
+            </div>
+        </section>
+        <!-- 加载中动画 -->
+        <div class="loader">
+            <div class="loading-3">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </div>
+        <!--消息提示区域 -->
+        <div id="errorNotice">
+        	<span></span>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/zepto-v1.2.0.min.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
